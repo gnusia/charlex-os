@@ -1,4 +1,7 @@
 #include "includes/kernel.h"
+#include "includes/utils.h"
+#include "includes/char.h"
+#include "includes/reqs.h"
 
 //index for video buffer array
 uint32 vga_index;
@@ -57,7 +60,7 @@ void init_vga(uint8 fore_color, uint8 back_color)
 /*
 increase vga_index by width of row(80)
 */
-void print_new_line()
+void newline_on_terminal()
 {
   if(next_line_index >= 55){
     next_line_index = 0;
@@ -115,7 +118,7 @@ void itoa(int num, char *number)
 }
 
 //print string by calling print_char
-void print_string(char *str)
+void print_on_terminal(char *str)
 {
   uint32 index = 0;
   while(str[index]){
@@ -130,42 +133,11 @@ void print_int(int num)
 {
   char str_num[digit_count(num)+1];
   itoa(num, str_num);
-  print_string(str_num);
+  print_on_terminal(str_num);
 }
 
-void logo(){
-  print_string("      _                _     __  __");
-  print_new_line();
+void kernel_up(){
 
-  print_string("  ___| |__   __ _ _ __| | ___\\\\ \\/ /");
-  print_new_line();
-
-  print_string(" / __| '_  \\/ _` | '__| |/ _ \\\\  /");
-  print_new_line();
-
-  print_string("| (__| | | | (_| | |  | |  __//  \\");
-  print_new_line();
-
-  print_string(" \\___|_| |_|\\__,_|_|  |_| \\___/_/\\_\\");
-  print_new_line();
-
-  print_string("        	  ___  ____      ");
-  print_new_line();
-
-  print_string("        	 / _ \\/ ___|    ");
-  print_new_line();
-
-  print_string("        	| | | \\___ \\   ");
-  print_new_line();
-
-  print_string("        	| |_| |___) |    ");
-  print_new_line();
-
-  print_string("        	 \\___/|____/    ");
-}
-
-void kernel_entry()
-{
   //first init vga with fore & back colors
   // init_vga(WHITE, BLACK);
 
@@ -175,26 +147,23 @@ void kernel_entry()
     g_fore_color = BRIGHT_RED;
   */
   // color of terminal
-  init_vga(GREEN , BLACK);
-  print_new_line();
+  init_vga(WHITE, BLACK);
+  newline_on_terminal();
   logo();
-  print_new_line();
-  print_string("|------------------------|");
-  print_new_line();
-  print_string("!Welcome to about charleX!");
-  print_new_line();
-  print_string("|------------------------|");
-  print_new_line();
-  print_string("|---------------------------------------|");
-  print_new_line();
-  print_string("| Created  by : amzy-0 (M.Amin Azimi.K) |");
-  print_new_line();
-  print_string("|---------------------------------------|");
-  print_new_line();
-  print_string("|     Reference : \"codeproject.com\"     |");
-  print_new_line();
-  print_string("|---------------------------------------|");
+  print_on_terminal("|------------------|");
+  newline_on_terminal();
+  print_on_terminal("!Welcome to charleX!");
+  newline_on_terminal();
+  print_on_terminal("!    version 0.1   !");
+  newline_on_terminal();
+  print_on_terminal("|------------------|");
+  newline_on_terminal();
+  print_on_terminal("|---------------------------------------|");
+  newline_on_terminal();
+  print_on_terminal("| Creator : amzy-0 (M.Amin Azimi.K)     |");
+  newline_on_terminal();
+  print_on_terminal("|---------------------------------------|");
 
-  print_new_line();
+  newline_on_terminal();
 
 }
