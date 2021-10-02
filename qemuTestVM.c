@@ -220,7 +220,7 @@ void input(){
 
 
     for (int i = 0; i < 1; i++){
-      sleep(0x04FFFFFF);/* keyboard type speed NUMBER(hex) for QEMU VM */
+      sleep(0x06FFFFFF);/* keyboard type speed NUMBER(hex) for QEMU VM */
     }
 
   }while(ch > 0);
