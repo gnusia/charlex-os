@@ -13,8 +13,8 @@ void kernel_up(){
   init_vga(WHITE, BLACK);
   newline_on_terminal();
   logo();
-  newline_on_terminal();
   print_on_terminal("Creator : Amzy-0 (M.Amin Azimi .K)");
+  newline_on_terminal();
   newline_on_terminal();
 }
 
