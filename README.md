@@ -24,9 +24,11 @@
 
 # charleX OS
 
-charleX is a simple OS ... kernel written with c programming language and reference of this code is 'codeproject.com'.
-I still working to make a better kernel than this one, and many features will be added to this project.
-I wanna create the free and open-source OS like gnu/Linux, *BSD,... and you can support us. if you like this project, give a star to the project and send better code to us.
+CharleX is the simple os.
+The kernel is written in the C and the reference is  codeproject.com.
+I am still working on the source code to make a better kernel. Many features will be added.
+I want to create a free and open-source operating system like Linux, FreeBSD, etc. 
+You can support us with contribute and making better code to this project or giving stars.
 
 
 ![screenshots](screenshots/charleXGrub.png)
