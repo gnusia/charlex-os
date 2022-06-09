@@ -24,7 +24,7 @@
 
 # charleX OS
 
-CharleX is the simple os.
+CharleX is a simple OS.
 The kernel is written in the C and the reference is  codeproject.com.
 I am still working on the source code to make a better kernel. Many features will be added.
 I want to create a free and open-source operating system like Linux, FreeBSD, etc. 
