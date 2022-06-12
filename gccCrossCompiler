@@ -15,6 +15,4 @@ sudo apt  install grub-pc-bin -y
 sudo apt  install libfontconfig1 -y
 sudo apt install mesa-common-dev -y
 sudo apt  install libglu1-mesa-dev -y
-sudo apt update && sudo apt upgrade -y
-sudo apt install qemu-system-x86 -y
 
