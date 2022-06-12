@@ -165,8 +165,6 @@ void input(){
           newline_on_terminal();
           print_on_terminal("KEY : UP ARROW | STATUS: PRESSED  ; ");
           newline_on_terminal();
-          print_on_terminal("this key not work in this terminal !");
-          newline_on_terminal();
           newline_on_terminal();
           print_on_terminal("# ");
           enter_cuonter++;
@@ -176,8 +174,6 @@ void input(){
     else if(keycode == KEY_DOWN){
           newline_on_terminal();
           print_on_terminal("KEY : DOWN ARROW | STATUS : PRESSED; ");
-          newline_on_terminal();
-          print_on_terminal("this key not work in this terminal !");
           newline_on_terminal();
           newline_on_terminal();
           print_on_terminal("# ");
@@ -202,7 +198,7 @@ void input(){
         newline_on_terminal();
         print_on_terminal("EXIT ! : ");
         newline_on_terminal();
-        print_on_terminal("if you want use CHARLEX-OS => please REBOOT your machine !");
+        print_on_terminal("HALT MODE : please REBOOT your machine !");
         newline_on_terminal();
         newline_on_terminal();
         break;
