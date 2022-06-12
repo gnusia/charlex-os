@@ -19,7 +19,7 @@ void kernel_up(){
 
 
   for (int i = 0; i < 40; i++){
-    sleep(0x02FAFFFFF); // sleep for logo to load ;;
+    sleep(0x02FAFFFF); // sleep for logo to load ;;
   }
   //color set to green and black
   init_vga(WHITE, BLACK);
