@@ -32,10 +32,10 @@ void kernel_up(){
     char keycode = 0;
     keycode = get_input_prompt();
 
+    input();
+  
     if (keycode == KEY_ESC){break;}
     if (keycode == KEY_ENTER){next_line_index =next_line_index-1;}
-  
-    input();
         
   }
 
