@@ -29,7 +29,6 @@ void kernel_up(){
     keycode = get_input_prompt();
     input();
     if (keycode == KEY_ENTER){next_line_index =next_line_index-2;}
-        
   }
 
 }
